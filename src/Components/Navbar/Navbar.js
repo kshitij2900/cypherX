@@ -36,7 +36,7 @@ export default function Navbar(props) {
                             </div>
                             <div className="nav-disp-icon nav-disp-drop">
                                 <div>
-                                <img src={downIcon} alt="icon" style={{transform: `rotate(${isRotated ? 180 : 0}deg)`,}} />
+                                <img src={downIcon} alt="icon" style={{transform: `rotate(${isRotated ? 180 : 0}deg)`}} />
                                 </div>
                             </div>
                         </div>

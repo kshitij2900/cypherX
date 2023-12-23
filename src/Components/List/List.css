@@ -1,15 +1,15 @@
 .list-container{
-    width: 360px;
-    margin-left: 2.5rem;
+    width: 100vw;
+    margin-left: 1rem;
 }
 .list-container:last-child{
-    margin-right: 2.5rem;
+    margin-right: 1.2rem;
 }
 .list-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 0rem;
+    padding: 0.7rem 0.1rem;
 }
 .list-header-left, .list-header-right{
     display: flex;
@@ -42,7 +42,7 @@
 @media (max-width: 500px) and (min-width: 300px){
     .list-container{
         width: 320px;
-        margin-left: 1.5rem;
+        margin-left: 0.5rem;
     }
     .list-container:last-child{
         margin-right: 1.5rem;

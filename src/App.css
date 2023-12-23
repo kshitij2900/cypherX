@@ -17,10 +17,9 @@
   .board-details{
     width: 100%;
     height: calc(100vh - 68px);
-    background-color: var(--grey2);
     overflow-x: scroll;
   }
   .board-details-list{
-    width: fit-content;
+    width: 100vw;
     display: flex;
   }
