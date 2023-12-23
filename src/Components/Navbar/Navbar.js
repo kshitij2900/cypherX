@@ -6,9 +6,11 @@ import './Navbar.css'
 
 export default function Navbar(props) {
     const [toggleFilter, settoggleFilter] = useState(false);
+    const [isRotated, setIsRotated] = useState(false);
 
     function handleDisplayToggle(e) {
         settoggleFilter(!toggleFilter);
+        setIsRotated(!isRotated);
         if (e.target.value !== undefined) {
             props.handleGroupValue(e.target.value);
         }
@@ -33,7 +35,9 @@ export default function Navbar(props) {
                                 Display
                             </div>
                             <div className="nav-disp-icon nav-disp-drop">
-                                <img src={downIcon} alt="icon" />
+                                <div>
+                                <img src={downIcon} alt="icon" style={{transform: `rotate(${isRotated ? 180 : 0}deg)`,}} />
+                                </div>
                             </div>
                         </div>
                         <div className={toggleFilter ? "nav-disp-dropdown nav-disp-dropdown-show" : "nav-disp-dropdown"}>
