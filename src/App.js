@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 
 import List from './Components/List/List';
+import Navbar from './Components/Navbar/Navbar';
 
 import './App.css';
 
@@ -86,7 +87,12 @@ function App() {
 
   return (
     <>
-      
+      <Navbar
+        groupValue={groupValue}
+        orderValue={orderValue}
+        handleGroupValue={handleGroupValue}
+        handleOrderValue={handleOrderValue}
+      />
       <section className="board-details">
         <div className="board-details-list">
           {
